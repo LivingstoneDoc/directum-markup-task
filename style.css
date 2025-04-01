@@ -39,10 +39,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Segoe UI Regular", sans-serif;
+    font-size: 16px;
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -55,7 +56,9 @@
 .banner .menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 50px;
+    padding: 0 25px;
 }
 
 .banner .menu .menu-item {
@@ -120,7 +123,6 @@
     border: none;
     border-radius: 8px;
     font-family: "Segoe UI SemiBold", sans-serif;
-    font-size: 16px;
     color: #ffffff;
     background-color: #2F418A;
     cursor: pointer;
@@ -149,7 +151,6 @@
 .info .info-content .description {
     width: 50%;
     text-align: center;
-    font-size: 16px;
     padding: 0 16px;
 }
 
@@ -168,14 +169,12 @@
 
 .info .info-content .registration-info .check-info {
     margin-top: 16px;
-    font-size: 16px;
 }
 
 .info .info-content .registration-info .user-data {
     margin-top: 16px;
     display: flex;
     gap: 60px;
-    font-size: 16px;
 }
 
 .info .info-content .registration-info .user-data .user-list {
@@ -200,7 +199,29 @@
 }
 
 .price-list .subtitle-detail {
-    font-size: 16px;
     text-align: center;
     line-height: 10px;
+}
+
+.price-list .price-table {
+    margin-top: 32px;
+    width: 100%;
+}
+
+.price-list .price-table tr {
+    height: 50px;
+}
+
+.price-list .price-table tr th {
+    text-align: left;
+    border-bottom: 2px solid #DEE2E6;
+    font-family: "Segoe UI SemiBold", sans-serif;
+}
+
+.price-list .price-table tr th, td {
+    border-top: 1px solid #DEE2E6;
+}
+
+.price-list .price-table tbody tr:first-child td {
+    border-top: none;
 }
