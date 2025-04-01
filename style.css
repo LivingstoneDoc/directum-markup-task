@@ -48,6 +48,7 @@
 
 .banner {
     min-height: 793px;
+    padding: 32px 0 129px 0;
     background-color: #17A2B8;
 }
 
@@ -55,7 +56,6 @@
     display: flex;
     justify-content: space-between;
     height: 50px;
-    padding-top: 32px;
 }
 
 .banner .menu .menu-item {
@@ -137,12 +137,12 @@
 
 .info {
     min-height: 306px;
+    padding: 48px 0;
     background-color: #F8F9FA;
 }
 
 .info .info-content {
     display: flex;
-    padding-top: 48px;
     gap: 15px;
 }
 
@@ -166,12 +166,6 @@
     padding: 0 16px;
 }
 
-.info .info-content .registration-info .registration-title {
-    font-family: "Segoe UI SemiBold", sans-serif;
-    font-size: 32px;
-    text-align: center;
-}
-
 .info .info-content .registration-info .check-info {
     margin-top: 16px;
     font-size: 16px;
@@ -190,4 +184,23 @@
 
 .user-data-item {
     line-height: 20px;
+}
+
+.price-list {
+    min-height: 333px;
+    padding: 48px 0;
+    background-color: #ffffff;
+}
+
+.subtitle {
+    font-family: "Segoe UI SemiBold", sans-serif;
+    font-size: 32px;
+    color: #000000;
+    text-align: center;
+}
+
+.price-list .subtitle-detail {
+    font-size: 16px;
+    text-align: center;
+    line-height: 10px;
 }
