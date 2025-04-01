@@ -45,6 +45,7 @@
 :root {
     --main-text-color: #000000;
     --secondary-text-color: #ffffff;
+    --background-grey: #F8F9FA;
 }
 
 .container {
@@ -145,7 +146,7 @@
 .info {
     min-height: 306px;
     padding: 48px 0;
-    background-color: #F8F9FA;
+    background-color: var(--background-grey);
 }
 
 .info .info-content {
@@ -227,6 +228,10 @@
     font-family: "Segoe UI SemiBold", sans-serif;
 }
 
+.price-list .price-table tr th span {
+    text-transform: uppercase;
+}
+
 .price-list .price-table tr th, td {
     border-top: 1px solid #DEE2E6;
     color: var(--main-text-color);
@@ -238,7 +243,7 @@
 
 .speakers {
     min-height: 605px;
-    background-color: #F8F9FA;
+    background-color: var(--background-grey);
     padding: 48px 0;
 }
 
@@ -280,4 +285,34 @@
     text-align: center;
     font-family: "Segoe UI Italic", sans-serif;
     color: var(--main-text-color);
+}
+
+.footer {
+    min-height: 150px;
+    background-color: var(--background-grey);
+    margin-top: 48px;
+    padding: 45px 0;
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer .footer-content .footer-logo {
+    width: 130px;
+    height: 28px;
+}
+
+.footer .footer-content .footer-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer .footer-content .footer-rights {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #BABABA;
 }
