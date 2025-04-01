@@ -42,6 +42,11 @@
     font-size: 16px;
 }
 
+:root {
+    --main-text-color: #000000;
+    --secondary-text-color: #ffffff;
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -69,7 +74,7 @@
 
 .banner .menu .menu-item a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--secondary-text-color);
     border-bottom: 1px solid transparent;
     transition: border-color 0.5s ease;
 }
@@ -97,7 +102,7 @@
 
 .banner .banner-content .banner-text {
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--secondary-text-color);
 }
 
 .banner .banner-content .title {
@@ -123,7 +128,7 @@
     border: none;
     border-radius: 8px;
     font-family: "Segoe UI SemiBold", sans-serif;
-    color: #ffffff;
+    color: var(--secondary-text-color);
     background-color: #2F418A;
     cursor: pointer;
     transition: all 0.5s;
@@ -156,6 +161,7 @@
 
 .info .info-content .description .description-text {
     margin-top: 25px;
+    color: var(--main-text-color);
 }
 
 .info .info-content .description .description-text span {
@@ -169,6 +175,7 @@
 
 .info .info-content .registration-info .check-info {
     margin-top: 16px;
+    color: var(--main-text-color);
 }
 
 .info .info-content .registration-info .user-data {
@@ -183,24 +190,26 @@
 
 .user-data-item {
     line-height: 20px;
+    color: var(--main-text-color);
 }
 
 .price-list {
     min-height: 333px;
     padding: 48px 0;
-    background-color: #ffffff;
+    background-color: var(--secondary-text-color);
 }
 
 .subtitle {
     font-family: "Segoe UI SemiBold", sans-serif;
     font-size: 32px;
-    color: #000000;
+    color: var(--main-text-color);
     text-align: center;
 }
 
 .price-list .subtitle-detail {
     text-align: center;
     line-height: 10px;
+    color: var(--main-text-color);
 }
 
 .price-list .price-table {
@@ -220,8 +229,55 @@
 
 .price-list .price-table tr th, td {
     border-top: 1px solid #DEE2E6;
+    color: var(--main-text-color);
 }
 
 .price-list .price-table tbody tr:first-child td {
     border-top: none;
+}
+
+.speakers {
+    min-height: 605px;
+    background-color: #F8F9FA;
+    padding: 48px 0;
+}
+
+.speakers .speakers-group {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.speakers .speakers-group .speaker {
+    max-width: 217px;
+    min-height: 205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.speakers .speakers-group .speaker .speaker-avatar {
+    width: 120px;
+    height: 120px;
+}
+
+.speakers .speakers-group .speaker .speaker-avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.speakers .speakers-group .speaker .speaker-name {
+    font-family: "Segoe UI SemiBold", sans-serif;
+    font-size: 20px;
+    color: var(--main-text-color);
+}
+
+.speakers .speakers-group .speaker .speaker-descr {
+    text-align: center;
+    font-family: "Segoe UI Italic", sans-serif;
+    color: var(--main-text-color);
 }
