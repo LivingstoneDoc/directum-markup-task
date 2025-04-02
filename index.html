@@ -22,7 +22,7 @@
                 <h1 class="banner-text title">Название мероприятия</h1>
                 <div class="banner-text meeting-date">4 мая 2049</div>
                 <div class="banner-text meeting-descr">В самом сердце страны</div>
-                <button class="registration-btn">Регистрация</button>
+                <button class="registration-btn banner-registration-btn">Регистрация</button>
             </div>
         </div>
 </section>
@@ -158,5 +158,19 @@
         </div>
     </div>
 </footer>
+<dialog id="registrationDialog" class="dialog registration-dialog" aria-labelledby="registration-dialog">
+    <div class="dialog-wrapper">
+      <div class="dialog-header">
+        <div class="dialog-title">Регистрация</div>
+        <button class="close-dialog-btn"></button>
+      </div>
+      <form class="registration-form form">
+        <input class="name-input input" type="text" placeholder="ФИО" required>
+        <input class="email-input input" type="text" placeholder="Email" required>
+        <button class="registration-btn dialog-registration-btn">Регистрация</button>
+      </form>
+    </div>
+  </dialog>
+  <script src="./main.js"></script>
 </body>
 </html>

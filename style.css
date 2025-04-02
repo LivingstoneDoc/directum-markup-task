@@ -34,6 +34,13 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "Roboto Light";
+    src:
+      url("./fonts/Roboto-Light.ttf") format("ttf");
+    font-weight: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -122,25 +129,12 @@
     margin-top: 32px;
 }
 
-.banner .banner-content .registration-btn {
+.banner .banner-content .banner-registration-btn {
     margin-top: 48px;
     width: 208px;
     height: 56px;
-    border: none;
-    border-radius: 8px;
     font-family: "Segoe UI SemiBold", sans-serif;
-    color: var(--secondary-text-color);
-    background-color: #2F418A;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-
-.banner .banner-content .registration-btn:hover {
-    box-shadow: 0px 3px 10px 0px #2F418A;
-}
-
-.banner .banner-content .registration-btn:active {
-    box-shadow: none;
+    padding: 17px 52px;
 }
 
 .info {
@@ -315,4 +309,114 @@
     font-size: 12px;
     text-transform: uppercase;
     color: #BABABA;
+}
+
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 404px;
+    min-height: 252px;
+    background-color: #ffffff;
+    border: none;
+    padding: 0;
+}
+
+.dialog::backdrop {
+    background-color: #9FA3AB;
+    opacity: 0.5;
+}
+
+.dialog .dialog-wrapper {
+    height: 100%;
+    padding: 32px;
+}
+
+.dialog .dialog-wrapper .dialog-header .dialog-title {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 26px;
+    color: #9FA3AB;
+}
+
+.dialog .dialog-wrapper .dialog-header .close-dialog-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 16px;
+    height: 16px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.dialog .dialog-wrapper .dialog-header .close-dialog-btn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    border: 1px solid #BEC7CB;
+    width: 100%;
+    transform: rotate(45deg);
+}
+
+.dialog .dialog-wrapper .dialog-header .close-dialog-btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    border: 1px solid #BEC7CB;
+    width: 100%;
+    transform: rotate(-45deg);
+}
+
+.dialog .dialog-wrapper .registration-form {
+    margin-top: 24px;
+}
+
+.dialog .dialog-wrapper .registration-form .input {
+    width: 100%;
+    height: 28px;
+    padding: 6px;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 14px;
+    border: 1px solid #B5BFC3;
+    color: #B5BFC3;
+}
+
+.dialog .dialog-wrapper .registration-form .input:focus {
+    color: var(--main-text-color);
+}
+
+.dialog .dialog-wrapper .registration-form .email-input {
+    margin-top: 16px;
+}
+
+.dialog .dialog-wrapper .registration-form .dialog-registration-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 127px;
+    height: 38px;
+    padding: 10px 14px;
+}
+
+.registration-btn {
+    border: none;
+    border-radius: 4px;
+    font-family: "Roboto Light", sans-serif;
+    color: var(--secondary-text-color);
+    background-color: #2F418A;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.registration-btn:hover {
+    box-shadow: 0px 3px 10px 0px #2F418A;
+}
+
+.registration-btn:active {
+    box-shadow: none;
+}
+
+.scrollLock {
+    overflow: hidden;
 }
