@@ -282,7 +282,7 @@
 }
 
 .footer {
-    min-height: 150px;
+    height: 150px;
     background-color: var(--background-grey);
     margin-top: 48px;
     padding: 45px 0;
@@ -396,7 +396,7 @@
     margin-top: 24px;
     width: 127px;
     height: 38px;
-    padding: 10px 14px;
+    padding: 10px 0;
 }
 
 .registration-btn {
@@ -419,4 +419,34 @@
 
 .scrollLock {
     overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .info, .price-list, .speakers {
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+
+    .info .info-content {
+        flex-direction: column;
+    }
+
+    .info .info-content .description {
+        width: 100%;
+        text-align: left;
+    }
+
+    .info .info-content .registration-info {
+        width: 100%;
+    }
+
+    .footer {
+        height: 100px;
+        padding: 20px;
+        margin-top: 24px;
+    }
 }
