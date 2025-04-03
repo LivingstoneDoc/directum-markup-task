@@ -15,6 +15,11 @@
                 <li class="menu-item"><a href="#">Стоимость участия</a></li>
                 <li class="menu-item"><a href="#">Спикеры</a></li>
             </ul>
+            <div class="burger-btn">
+                <div class="burger-btn-line"></div>
+                <div class="burger-btn-line"></div>
+                <div class="burger-btn-line"></div>
+            </div>
             <div class="banner-content">
                 <div class="logo">
                     <img src="./assets/icons/logo.png" alt="logo"/>
@@ -25,152 +30,164 @@
                 <button class="registration-btn banner-registration-btn">Регистрация</button>
             </div>
         </div>
-</section>
-<section class="info">
-    <div class="container">
-        <div class="info-content">
-            <div class="description">
-                <div class="description-greeting">Дорогие друзья!</div>
-                <p class="description-text">
-                    <span>Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    <br/><br/> 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-            <div class="registration-info">
-                <h2 class="subtitle">Регистрация</h2>
-                <div class="check-info">
-                    Пожалуйста, проверьте правильность введенных данных:
+    </section>
+    <div class="burger-menu-container">
+        <div class="burger-menu">
+            <div class="close-btn close-menu-btn"></div>
+            <ul class="burger-menu-list">
+                <li class="menu-item"><a href="#">О мероприятии</a></li>
+                <li class="menu-item"><a href="#">Регистрация</a></li>
+                <li class="menu-item"><a href="#">Стоимость участия</a></li>
+                <li class="menu-item"><a href="#">Спикеры</a></li>
+            </ul>
+        </div>
+        <div class="overflow"></div>
+    </div>
+    <section class="info">
+        <div class="container">
+            <div class="info-content">
+                <div class="description">
+                    <div class="description-greeting">Дорогие друзья!</div>
+                    <p class="description-text">
+                        <span>Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        <br/><br/> 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                 </div>
-                <div class="user-data">
-                    <ul class="user-list user-data-title">
-                        <li class="user-data-item">ФИО:</li>
-                        <li class="user-data-item">Место работы:</li>
-                        <li class="user-data-item">E-mail:</li>
-                    </ul>
-                    <ul class="user-list user-data-list">
-                        <li class="user-data-item">Иванов Иван Иванович</li>
-                        <li class="user-data-item">DIRECTUM</li>
-                        <li class="user-data-item">ivanov_ii@directum.ru</li>
-                    </ul>
+                <div class="registration-info">
+                    <h2 class="subtitle">Регистрация</h2>
+                    <div class="check-info">
+                        Пожалуйста, проверьте правильность введенных данных:
+                    </div>
+                    <div class="user-data">
+                        <ul class="user-list user-data-title">
+                            <li class="user-data-item">ФИО:</li>
+                            <li class="user-data-item">Место работы:</li>
+                            <li class="user-data-item">E-mail:</li>
+                        </ul>
+                        <ul class="user-list user-data-list">
+                            <li class="user-data-item">Иванов Иван Иванович</li>
+                            <li class="user-data-item">DIRECTUM</li>
+                            <li class="user-data-item">ivanov_ii@directum.ru</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="price-list">
-    <div class="container">
-        <h2 class="subtitle">Стоимость участия</h2>
-        <div class="subtitle-detail">(на 1 человека)</div>
-        <table class="price-table">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Стоимость <span>до</span> 1 января</th>
-                    <th>Стоимость <span>после</span> 1 января</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>С проживанием в 2-местном номере</td>
-                    <td>30 000 ₽</td>
-                    <td>35 000 ₽</td>
-                </tr>
-                <tr>
-                    <td>Доплата за 1-местное проживание</td>
-                    <td>500 ₽</td>
-                    <td>1 500 ₽</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</section>
-<section class="speakers">
-    <div class="container">
-        <h2 class="subtitle">Наши спикеры</h2>
-        <div class="speakers-group">
-            <div class="speaker">
-                <div class="speaker-avatar">
-                    <img src="./assets/icons/speaker.png" alt="avatar"/>
+    </section>
+    <section class="price-list">
+        <div class="container">
+            <h2 class="subtitle">Стоимость участия</h2>
+            <div class="subtitle-detail">(на 1 человека)</div>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Стоимость <span>до</span> 1 января</th>
+                        <th>Стоимость <span>после</span> 1 января</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>С проживанием в 2-местном номере</td>
+                        <td>30 000 ₽</td>
+                        <td>35 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td>Доплата за 1-местное проживание</td>
+                        <td>500 ₽</td>
+                        <td>1 500 ₽</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="speakers">
+        <div class="container">
+            <h2 class="subtitle">Наши спикеры</h2>
+            <div class="speakers-group">
+                <div class="speaker">
+                    <div class="speaker-avatar">
+                        <img src="./assets/icons/speaker.png" alt="avatar"/>
+                    </div>
+                    <div class="speaker-name">Детектив пикачу</div>
+                    <div class="speaker-descr">
+                        уморительный, остроумный и обаятельный сыщик
+                    </div>
                 </div>
-                <div class="speaker-name">Детектив пикачу</div>
-                <div class="speaker-descr">
-                    уморительный, остроумный и обаятельный сыщик
+                <div class="speaker">
+                    <div class="speaker-avatar">
+                        <img src="./assets/icons/speaker.png" alt="avatar"/>
+                    </div>
+                    <div class="speaker-name">Детектив пикачу</div>
+                    <div class="speaker-descr">
+                        уморительный, остроумный и обаятельный сыщик
+                    </div>
                 </div>
-            </div>
-            <div class="speaker">
-                <div class="speaker-avatar">
-                    <img src="./assets/icons/speaker.png" alt="avatar"/>
+                <div class="speaker">
+                    <div class="speaker-avatar">
+                        <img src="./assets/icons/speaker.png" alt="avatar"/>
+                    </div>
+                    <div class="speaker-name">Детектив пикачу</div>
+                    <div class="speaker-descr">
+                        уморительный, остроумный и обаятельный сыщик
+                    </div>
                 </div>
-                <div class="speaker-name">Детектив пикачу</div>
-                <div class="speaker-descr">
-                    уморительный, остроумный и обаятельный сыщик
+                <div class="speaker">
+                    <div class="speaker-avatar">
+                        <img src="./assets/icons/speaker.png" alt="avatar"/>
+                    </div>
+                    <div class="speaker-name">Детектив пикачу</div>
+                    <div class="speaker-descr">
+                        уморительный, остроумный и обаятельный сыщик
+                    </div>
                 </div>
-            </div>
-            <div class="speaker">
-                <div class="speaker-avatar">
-                    <img src="./assets/icons/speaker.png" alt="avatar"/>
+                <div class="speaker">
+                    <div class="speaker-avatar">
+                        <img src="./assets/icons/speaker.png" alt="avatar"/>
+                    </div>
+                    <div class="speaker-name">Детектив пикачу</div>
+                    <div class="speaker-descr">
+                        уморительный, остроумный и обаятельный сыщик
+                    </div>
                 </div>
-                <div class="speaker-name">Детектив пикачу</div>
-                <div class="speaker-descr">
-                    уморительный, остроумный и обаятельный сыщик
-                </div>
-            </div>
-            <div class="speaker">
-                <div class="speaker-avatar">
-                    <img src="./assets/icons/speaker.png" alt="avatar"/>
-                </div>
-                <div class="speaker-name">Детектив пикачу</div>
-                <div class="speaker-descr">
-                    уморительный, остроумный и обаятельный сыщик
-                </div>
-            </div>
-            <div class="speaker">
-                <div class="speaker-avatar">
-                    <img src="./assets/icons/speaker.png" alt="avatar"/>
-                </div>
-                <div class="speaker-name">Детектив пикачу</div>
-                <div class="speaker-descr">
-                    уморительный, остроумный и обаятельный сыщик
-                </div>
-            </div>
-            <div class="speaker">
-                <div class="speaker-avatar">
-                    <img src="./assets/icons/speaker.png" alt="avatar"/>
-                </div>
-                <div class="speaker-name">Детектив пикачу</div>
-                <div class="speaker-descr">
-                    уморительный, остроумный и обаятельный сыщик
+                <div class="speaker">
+                    <div class="speaker-avatar">
+                        <img src="./assets/icons/speaker.png" alt="avatar"/>
+                    </div>
+                    <div class="speaker-name">Детектив пикачу</div>
+                    <div class="speaker-descr">
+                        уморительный, остроумный и обаятельный сыщик
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="./assets/icons/logo-footer.png" alt="logo"/>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./assets/icons/logo-footer.png" alt="logo"/>
+                </div>
+                <div class="footer-rights">&copy Directum, 2019</div>
             </div>
-            <div class="footer-rights">&copy Directum, 2019</div>
         </div>
-    </div>
-</footer>
-<dialog id="registrationDialog" class="dialog registration-dialog" aria-labelledby="registration-dialog">
-    <div class="dialog-wrapper">
-      <div class="dialog-header">
-        <div class="dialog-title">Регистрация</div>
-        <button class="close-dialog-btn"></button>
-      </div>
-      <form class="registration-form form">
-        <input class="name-input input" type="text" placeholder="ФИО" required>
-        <input class="email-input input" type="text" placeholder="Email" required>
-        <button class="registration-btn dialog-registration-btn">Регистрация</button>
-      </form>
-    </div>
-  </dialog>
-  <script src="./main.js"></script>
+    </footer>
+    <dialog id="registrationDialog" class="dialog registration-dialog" aria-labelledby="registration-dialog">
+        <div class="dialog-wrapper">
+        <div class="dialog-header">
+            <div class="dialog-title">Регистрация</div>
+            <button class="close-btn close-dialog-btn"></button>
+        </div>
+        <form class="registration-form form">
+            <input class="name-input input" type="text" placeholder="ФИО" required>
+            <input class="email-input input" type="text" placeholder="Email" required>
+            <button class="registration-btn dialog-registration-btn">Регистрация</button>
+        </form>
+        </div>
+    </dialog>
+    <script src="./main.js"></script>
 </body>
 </html>

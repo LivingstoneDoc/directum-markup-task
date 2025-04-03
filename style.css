@@ -74,20 +74,24 @@
     padding: 0 25px;
 }
 
-.banner .menu .menu-item {
+.banner .burger-btn {
+    display: none;
+}
+
+.menu-item {
     list-style-type: none;
     font-size: 18px;
     
 }
 
-.banner .menu .menu-item a {
+.menu-item a {
     text-decoration: none;
     color: var(--secondary-text-color);
     border-bottom: 1px solid transparent;
     transition: border-color 0.5s ease;
 }
 
-.banner .menu .menu-item a:hover {
+.menu-item a:hover {
     border-bottom: 1px solid #ffffff;
 }
 
@@ -116,16 +120,19 @@
 .banner .banner-content .title {
     margin-top: 48px;
     font-family: "Segoe UI SemiBold", sans-serif;
-    font-size: 48px;
+    font-size: 36px;
+    text-align: center;
 }
 
 .banner .banner-content .meeting-date {
     font-family: "Segoe UI SemiBold", sans-serif;
+    font-size: 24px;
     margin-top: 32px;
 }
 
 .banner .banner-content .meeting-descr {
     font-family: "Segoe UI SemiBold", sans-serif;
+    font-size: 24px;
     margin-top: 32px;
 }
 
@@ -339,7 +346,7 @@
     color: #9FA3AB;
 }
 
-.dialog .dialog-wrapper .dialog-header .close-dialog-btn {
+.close-btn {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -350,7 +357,7 @@
     cursor: pointer;
 }
 
-.dialog .dialog-wrapper .dialog-header .close-dialog-btn:before {
+.close-btn:before {
     content: "";
     position: absolute;
     left: 0;
@@ -359,7 +366,7 @@
     transform: rotate(45deg);
 }
 
-.dialog .dialog-wrapper .dialog-header .close-dialog-btn:after {
+.close-btn:after {
     content: "";
     position: absolute;
     left: 0;
@@ -421,14 +428,13 @@
     overflow: hidden;
 }
 
+.overflow, .burger-menu-container {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .container {
         max-width: 720px;
-    }
-
-    .info, .price-list, .speakers {
-        padding-left: 23px;
-        padding-right: 23px;
     }
 
     .info .info-content {
@@ -448,5 +454,155 @@
         height: 100px;
         padding: 20px;
         margin-top: 24px;
+    }
+}
+
+@media (max-width: 560px) {
+    .banner .menu {
+        display: none;
+    }
+
+    .banner .burger-btn {
+        position: absolute;
+        top: 16px;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        position: absolute;
+        width: 25px;
+        height: 14px;
+        cursor: pointer;
+    }
+
+    .banner .burger-btn .burger-btn-line {
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+    }
+
+    .burger-menu-container {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        z-index: 10;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    .burger-menu-container.active {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .burger-menu-container .burger-menu {
+        position: relative;
+        width: 270px;
+        height: 100%;
+        background-color: #2F418A;
+        padding: 10px 15px;
+        z-index: 10;
+        transition: all 0.5s;
+    }
+
+    .burger-menu-container .burger-menu .close-menu-btn {
+        top: 25px;
+        right: 25px;
+    }
+
+    .burger-menu-container .overflow {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--background-grey);
+    }
+
+    .burger-menu-container .burger-menu-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .subtitle {
+        text-align: left;
+    }
+
+    .banner {
+        position: relative;
+        min-height: 568px;
+        padding: 78px 24px 44px;
+    }
+
+    .banner .banner-content {
+        margin-top: 0;
+    }
+
+    .banner .banner-content .title {
+        margin-top: 16px;
+    }
+
+    .banner .banner-content .meeting-date {
+        margin-top: 24px;
+    }
+
+    .banner .banner-content .meeting-descr {
+        font-size: 21px;
+        margin-top: 16px;
+    }
+
+    .banner .banner-content .banner-registration-btn {
+        margin-top: 32px;
+    }
+
+    .info {
+        min-height: 225px;
+    }
+
+    .info, .price-list, .speakers {
+        padding: 24px 15px;
+    }
+
+    .info .info-content .description {
+        display: none;
+    }
+
+    .info .info-content .registration-info {
+        padding: 0;
+    }
+
+    .info .info-content .registration-info .user-data {
+        gap: 0;
+    }
+
+    .info .info-content .registration-info .user-data .user-data-list .user-data-item:nth-child(1) {
+        margin-left: -55px;
+    }
+
+    .info .info-content .registration-info .user-data .user-data-list .user-data-item:nth-child(2) {
+        margin-left: 13px;
+    }
+
+    .info .info-content .registration-info .user-data .user-data-list .user-data-item:nth-child(3) {
+        margin-left: -46px;
+    }
+
+    .price-list {
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .price-list .subtitle-detail {
+        text-align: left;
     }
 }
