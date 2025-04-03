@@ -199,6 +199,10 @@ html {
     color: var(--main-text-color);
 }
 
+#info .info-content .registration-info .user-data-small-screen {
+    display: none;
+}
+
 #price-list {
     min-height: 333px;
     padding: 48px 0;
@@ -250,6 +254,10 @@ html {
     min-height: 605px;
     background-color: var(--background-grey);
     padding: 48px 0;
+}
+
+#speakers .speakers-subtitle-small-screen {
+    display: none;
 }
 
 #speakers .speakers-group {
@@ -454,6 +462,14 @@ html {
         width: 100%;
     }
 
+    #speakers .speakers-subtitle {
+        display: none;
+    }
+
+    #speakers .speakers-subtitle-small-screen {
+        display: block;
+    }
+
     .footer {
         height: 100px;
         padding: 20px;
@@ -581,19 +597,22 @@ html {
     }
 
     #info .info-content .registration-info .user-data {
-        gap: 0;
+        display: none;
     }
 
-    #info .info-content .registration-info .user-data .user-data-list .user-data-item:nth-child(1) {
-        margin-left: -55px;
+    #info .info-content .registration-info .user-data-small-screen {
+        display: block;
     }
 
-    #info .info-content .registration-info .user-data .user-data-list .user-data-item:nth-child(2) {
-        margin-left: 13px;
+    #info .info-content .registration-info .user-data-small-screen {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
     }
-
-    #info .info-content .registration-info .user-data .user-data-list .user-data-item:nth-child(3) {
-        margin-left: -46px;
+    
+    #info .info-content .registration-info .user-data-small-screen .user-data-item {
+        display: flex;
+        gap: 15px;
     }
 
     #price-list {
