@@ -5,6 +5,7 @@ const body = document.querySelector('body');
 const burgerBtn = document.querySelector('.burger-btn');
 const closeMenuBtn = document.querySelector('.close-menu-btn');
 const burgerMenu = document.querySelector('.burger-menu-container');
+const links = document.querySelectorAll('a');
 
 const openDialogWindow = () => {
     registrationDialog.showModal();
@@ -41,3 +42,7 @@ const closeBurgerMenu = () => {
     returnScroll();
 }
 closeMenuBtn.addEventListener('click', closeBurgerMenu);
+
+links.forEach(link => {
+    link.addEventListener('click', closeBurgerMenu);
+})

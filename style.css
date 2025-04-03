@@ -49,6 +49,10 @@
     font-size: 16px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --main-text-color: #000000;
     --secondary-text-color: #ffffff;
@@ -60,13 +64,13 @@
     margin: 0 auto;
 }
 
-.banner {
+#banner {
     min-height: 793px;
     padding: 32px 0 129px 0;
     background-color: #17A2B8;
 }
 
-.banner .menu {
+#banner .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,7 +78,7 @@
     padding: 0 25px;
 }
 
-.banner .burger-btn {
+#banner .burger-btn {
     display: none;
 }
 
@@ -95,48 +99,48 @@
     border-bottom: 1px solid #ffffff;
 }
 
-.banner .banner-content {
+#banner .banner-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 120px;
 }
 
-.banner .banner-content .logo {
+#banner .banner-content .logo {
     width: 142px;
     height: 142px;
 }
 
-.banner .banner-content .logo img {
+#banner .banner-content .logo img {
     width: 100%;
     height: 100%;
 }
 
-.banner .banner-content .banner-text {
+#banner .banner-content .banner-text {
     text-transform: uppercase;
     color: var(--secondary-text-color);
 }
 
-.banner .banner-content .title {
+#banner .banner-content .title {
     margin-top: 48px;
     font-family: "Segoe UI SemiBold", sans-serif;
     font-size: 36px;
     text-align: center;
 }
 
-.banner .banner-content .meeting-date {
+#banner .banner-content .meeting-date {
     font-family: "Segoe UI SemiBold", sans-serif;
     font-size: 24px;
     margin-top: 32px;
 }
 
-.banner .banner-content .meeting-descr {
+#banner .banner-content .meeting-descr {
     font-family: "Segoe UI SemiBold", sans-serif;
     font-size: 24px;
     margin-top: 32px;
 }
 
-.banner .banner-content .banner-registration-btn {
+#banner .banner-content .banner-registration-btn {
     margin-top: 48px;
     width: 208px;
     height: 56px;
@@ -144,49 +148,49 @@
     padding: 17px 52px;
 }
 
-.info {
+#info {
     min-height: 306px;
     padding: 48px 0;
     background-color: var(--background-grey);
 }
 
-.info .info-content {
+#info .info-content {
     display: flex;
     gap: 15px;
 }
 
-.info .info-content .description {
+#info .info-content .description {
     width: 50%;
     text-align: center;
     padding: 0 16px;
 }
 
-.info .info-content .description .description-text {
+#info .info-content .description .description-text {
     margin-top: 25px;
     color: var(--main-text-color);
 }
 
-.info .info-content .description .description-text span {
+#info .info-content .description .description-text span {
     font-family: "Segoe UI SemiBold", sans-serif;
 }
 
-.info .info-content .registration-info {
+#info .info-content .registration-info {
     width: 50%;
     padding: 0 16px;
 }
 
-.info .info-content .registration-info .check-info {
+#info .info-content .registration-info .check-info {
     margin-top: 16px;
     color: var(--main-text-color);
 }
 
-.info .info-content .registration-info .user-data {
+#info .info-content .registration-info .user-data {
     margin-top: 16px;
     display: flex;
     gap: 60px;
 }
 
-.info .info-content .registration-info .user-data .user-list {
+#info .info-content .registration-info .user-data .user-list {
     list-style-type: none;
 }
 
@@ -195,7 +199,7 @@
     color: var(--main-text-color);
 }
 
-.price-list {
+#price-list {
     min-height: 333px;
     padding: 48px 0;
     background-color: var(--secondary-text-color);
@@ -208,47 +212,47 @@
     text-align: center;
 }
 
-.price-list .subtitle-detail {
+#price-list .subtitle-detail {
     text-align: center;
     line-height: 10px;
     color: var(--main-text-color);
 }
 
-.price-list .price-table {
+#price-list .price-table {
     margin-top: 32px;
     width: 100%;
 }
 
-.price-list .price-table tr {
+#price-list .price-table tr {
     height: 50px;
 }
 
-.price-list .price-table tr th {
+#price-list .price-table tr th {
     text-align: left;
     border-bottom: 2px solid #DEE2E6;
     font-family: "Segoe UI SemiBold", sans-serif;
 }
 
-.price-list .price-table tr th span {
+#price-list .price-table tr th span {
     text-transform: uppercase;
 }
 
-.price-list .price-table tr th, td {
+#price-list .price-table tr th, td {
     border-top: 1px solid #DEE2E6;
     color: var(--main-text-color);
 }
 
-.price-list .price-table tbody tr:first-child td {
+#price-list .price-table tbody tr:first-child td {
     border-top: none;
 }
 
-.speakers {
+#speakers {
     min-height: 605px;
     background-color: var(--background-grey);
     padding: 48px 0;
 }
 
-.speakers .speakers-group {
+#speakers .speakers-group {
     margin-top: 32px;
     display: flex;
     justify-content: center;
@@ -256,7 +260,7 @@
     flex-wrap: wrap;
 }
 
-.speakers .speakers-group .speaker {
+#speakers .speakers-group .speaker {
     max-width: 217px;
     min-height: 205px;
     display: flex;
@@ -266,23 +270,23 @@
     gap: 8px;
 }
 
-.speakers .speakers-group .speaker .speaker-avatar {
+#speakers .speakers-group .speaker .speaker-avatar {
     width: 120px;
     height: 120px;
 }
 
-.speakers .speakers-group .speaker .speaker-avatar img {
+#speakers .speakers-group .speaker .speaker-avatar img {
     width: 100%;
     height: 100%;
 }
 
-.speakers .speakers-group .speaker .speaker-name {
+#speakers .speakers-group .speaker .speaker-name {
     font-family: "Segoe UI SemiBold", sans-serif;
     font-size: 20px;
     color: var(--main-text-color);
 }
 
-.speakers .speakers-group .speaker .speaker-descr {
+#speakers .speakers-group .speaker .speaker-descr {
     text-align: center;
     font-family: "Segoe UI Italic", sans-serif;
     color: var(--main-text-color);
@@ -437,16 +441,16 @@
         max-width: 720px;
     }
 
-    .info .info-content {
+    #info .info-content {
         flex-direction: column;
     }
 
-    .info .info-content .description {
+    #info .info-content .description {
         width: 100%;
         text-align: left;
     }
 
-    .info .info-content .registration-info {
+    #info .info-content .registration-info {
         width: 100%;
     }
 
@@ -458,11 +462,11 @@
 }
 
 @media (max-width: 560px) {
-    .banner .menu {
+    #banner .menu {
         display: none;
     }
 
-    .banner .burger-btn {
+    #banner .burger-btn {
         position: absolute;
         top: 16px;
         left: 20px;
@@ -475,7 +479,7 @@
         cursor: pointer;
     }
 
-    .banner .burger-btn .burger-btn-line {
+    #banner .burger-btn .burger-btn-line {
         width: 100%;
         height: 2px;
         background-color: #ffffff;
@@ -510,11 +514,6 @@
         transition: all 0.5s;
     }
 
-    .burger-menu-container .burger-menu .close-menu-btn {
-        top: 25px;
-        right: 25px;
-    }
-
     .burger-menu-container .overflow {
         position: fixed;
         display: block;
@@ -538,71 +537,71 @@
         text-align: left;
     }
 
-    .banner {
+    #banner {
         position: relative;
         min-height: 568px;
         padding: 78px 24px 44px;
     }
 
-    .banner .banner-content {
+    #banner .banner-content {
         margin-top: 0;
     }
 
-    .banner .banner-content .title {
+    #banner .banner-content .title {
         margin-top: 16px;
     }
 
-    .banner .banner-content .meeting-date {
+    #banner .banner-content .meeting-date {
         margin-top: 24px;
     }
 
-    .banner .banner-content .meeting-descr {
+    #banner .banner-content .meeting-descr {
         font-size: 21px;
         margin-top: 16px;
     }
 
-    .banner .banner-content .banner-registration-btn {
+    #banner .banner-content .banner-registration-btn {
         margin-top: 32px;
     }
 
-    .info {
+    #info {
         min-height: 225px;
     }
 
-    .info, .price-list, .speakers {
+    #info, #price-list, #speakers {
         padding: 24px 15px;
     }
 
-    .info .info-content .description {
+    #info .info-content .description {
         display: none;
     }
 
-    .info .info-content .registration-info {
+    #info .info-content .registration-info {
         padding: 0;
     }
 
-    .info .info-content .registration-info .user-data {
+    #info .info-content .registration-info .user-data {
         gap: 0;
     }
 
-    .info .info-content .registration-info .user-data .user-data-list .user-data-item:nth-child(1) {
+    #info .info-content .registration-info .user-data .user-data-list .user-data-item:nth-child(1) {
         margin-left: -55px;
     }
 
-    .info .info-content .registration-info .user-data .user-data-list .user-data-item:nth-child(2) {
+    #info .info-content .registration-info .user-data .user-data-list .user-data-item:nth-child(2) {
         margin-left: 13px;
     }
 
-    .info .info-content .registration-info .user-data .user-data-list .user-data-item:nth-child(3) {
+    #info .info-content .registration-info .user-data .user-data-list .user-data-item:nth-child(3) {
         margin-left: -46px;
     }
 
-    .price-list {
+    #price-list {
         width: 100%;
         overflow: scroll;
     }
 
-    .price-list .subtitle-detail {
+    #price-list .subtitle-detail {
         text-align: left;
     }
 }
